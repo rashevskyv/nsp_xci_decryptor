@@ -1,0 +1,1 @@
+for /r %%v in (games\*.*) do (start decrypt.bat "%%v" pause)
