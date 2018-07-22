@@ -23,4 +23,4 @@
 ### Special thanks
 * to [Ericjwg](https://gbatemp.net/members/ericjwg.367770/) for implementation of title_key extruder and biggest_nca finder
 
-<img src="complete.png">
+<img src="https://raw.githubusercontent.com/rashevskyv/nsp_xci_decryptor/master/complite.png">
