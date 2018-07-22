@@ -3,11 +3,11 @@
 1. Install python 3.x.x (dont forget to click PATH checkbox while instlling)
 1. Place files from zip of hactool to script folder
 1. Run get_keys.bat to get keys.txt
-1. Use [Plague](https://gbatemp.net/threads/atmosphere-mod-plague-easy-layeredfs-app-switching-alpha.508123/) to LayeredFS for playing decrypted games 
+1. Use [Plague](https://gbatemp.net/threads/atmosphere-mod-plague-easy-layeredfs-app-switching-alpha.508123/) and LayeredFS for playing decrypted games 
 
 
 ### Unpack games 
-1. Place all your NSP or\and XCI you choose for unpacking to "games" folder
+1. Place all your NSP or\and XCI what you choose for unpacking to "games" folder
 1. Run "decrypt_games_folder.bat" for unpacking
 	* or drag games one-by-one to decrypt.bat
 1. Wait for magic be done 
@@ -21,4 +21,6 @@
 1. Place "backups" folder to root of Switch's microsd
 
 ### Special thanks
-* to [Denis Wrun](https://vk.com/id340699273) for python_title_key_extrackting_tool
+* to [Ericjwg](https://gbatemp.net/members/ericjwg.367770/) for implementation of title_key extruder and biggest_nca finder
+
+<img>

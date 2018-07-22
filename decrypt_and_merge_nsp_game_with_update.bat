@@ -53,11 +53,18 @@ hactool.exe "%upd:"=%" -k keys.txt -x --intype=pfs0 --pfs0dir="%tempdir_upd%" >n
 echo    - DONE
 echo.
 
-call :get_key %tempdir_game% >nul 2>&1
 
-dir "%tempdir_game%" /b /o-s > nca_name.txt
-set /P nca_file= < nca_name.txt 
-del nca_name.txt >nul 2>&1
+:: get title_key
+(for %%i in (%tempdir_game%\*.tik) do (for /f %%k in ('tf.exe %%i') do set key=%%k))>nul
+
+:: get biggest nca
+(for /f "delims=" %%i in ('dir %tempdir_game% /b /os') do set nca_file=%%~nxi)>nul
+
+REM call :get_key %tempdir_game% >nul 2>&1
+
+REM dir "%tempdir_game%" /b /o-s > nca_name.txt
+REM set /P nca_file= < nca_name.txt 
+REM del nca_name.txt >nul 2>&1
 
 echo * Decrypting of %nca_file%
 echo    - Programm is not freezing. Be patient!
@@ -65,11 +72,17 @@ hactool.exe -k keys.txt "%tempdir_game%\%nca_file:"=%" --titlekey=%key% --plaint
 echo    - DONE
 echo.
 
-call :get_key %tempdir_upd% >nul 2>&1
+:: get title_key
+(for %%i in (%tempdir_upd%\*.tik) do (for /f %%k in ('tf.exe %%i') do set key=%%k))>nul
 
-dir "%tempdir_upd%" /b /o-s > nca_name.txt
-set /P nca_file= < nca_name.txt 
-del nca_name.txt >nul 2>&1
+:: get biggest nca
+(for /f "delims=" %%i in ('dir %tempdir_upd% /b /os') do set nca_file=%%~nxi)>nul
+
+REM call :get_key %tempdir_upd% >nul 2>&1
+
+REM dir "%tempdir_upd%" /b /o-s > nca_name.txt
+REM set /P nca_file= < nca_name.txt 
+REM del nca_name.txt >nul 2>&1
 
 echo * Merge game files with update
 echo    - Programm is not freezing. Be patient!
@@ -98,17 +111,17 @@ echo.
 pause
 exit
 
-:: get title_key from ticket
-:get_key
-	set tempdir=%1
-	echo %tempdir%
-	cd %tempdir%
-	rename *.tik title.tik
-	cd ../..
-	echo     * Extrackting title_key
-	py title_key.py %tempdir%
-	set /P key= < %tempdir%.txt
-	del %tempdir%.txt
-	echo        - DONE
-exit /b
+REM :: get title_key from ticket
+REM :get_key
+	REM set tempdir=%1
+	REM echo %tempdir%
+	REM cd %tempdir%
+	REM rename *.tik title.tik
+	REM cd ../..
+	REM echo     * Extrackting title_key
+	REM py title_key.py %tempdir%
+	REM set /P key= < %tempdir%.txt
+	REM del %tempdir%.txt
+	REM echo        - DONE
+REM exit /b
 
