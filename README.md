@@ -1,9 +1,9 @@
 ### What You Need
-1. Download hactool 1.1.0 (https://github.com/SciresM/hactool/releases/tag/1.1.0)
+1. Download [hactool 1.1.0](https://github.com/SciresM/hactool/releases/tag/1.1.0)
 1. Install python 3.x.x (dont forget to click PATH checkbox while instlling)
 1. Place files from zip of hactool to script folder
 1. Run get_keys.bat to get keys.txt
-1. Use [Plague](https://gbatemp.net/threads/atmosphere-mod-plague-easy-layeredfs-app-switching-alpha.508123/){:target="_blank"} to LayeredFS for playing decrypted games 
+1. Use [Plague](https://gbatemp.net/threads/atmosphere-mod-plague-easy-layeredfs-app-switching-alpha.508123/) to LayeredFS for playing decrypted games 
 
 
 ### Unpack games 
@@ -21,4 +21,4 @@
 1. Place "backups" folder to root of Switch's microsd
 
 ### Special thanks
-* to [Denis Wrun](https://vk.com/id340699273){:target="_blank"} for python_title_key_extrackting_tool
+* to [Denis Wrun](https://vk.com/id340699273) for python_title_key_extrackting_tool
