@@ -59,7 +59,6 @@ dir "%tempdir_game%" /b /o-s > nca_name.txt
 set /P nca_file= < nca_name.txt 
 del nca_name.txt >nul 2>&1
 
-echo.
 echo * Decrypting of %nca_file%
 echo    - Programm is not freezing. Be patient!
 hactool.exe -k keys.txt "%tempdir_game%\%nca_file:"=%" --titlekey=%key% --plaintext="%tempdir_game%\Decrypted.nca" >nul 2>&1
