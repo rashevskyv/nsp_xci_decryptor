@@ -1,5 +1,5 @@
 ### What You Need
-1. Download [hactool 1.1.0](https://github.com/SciresM/hactool/releases/tag/1.1.0)
+1. Download [hactool](https://github.com/SciresM/hactool/releases/latest)
 1. Install python 3.x.x (dont forget to click PATH checkbox while instlling)
 1. Place files from zip of hactool to script folder
 1. Run get_keys.bat to get keys.txt
